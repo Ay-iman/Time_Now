@@ -3,22 +3,39 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link rel="shortcut icon" href="./img/Logo.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="./img/Logo.svg" type="image/x-icon" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TimeNow</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="./index.js" defer></script>
     <link
       rel="stylesheet"
       href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
     />
   </head>
   <body>
+    <div id="backdrop"></div>
     <header>
       <section id="ri-section">
         <div id="ri-section__one">
           <img src="./img/Logo.svg" alt="" />
           <p>Features</p>
           <p>Pricing</p>
+        </div>
+        <div id="mobile__section">
+          <div id="ri-section__mobile">
+            <img src="./img/Logo.svg" alt="" />
+            <img src="./img/Hamburger Menu.svg" alt="" />
+          </div>
+          <div id="ri-section__mobile-one">
+            <div id="ri-section__mobile-popup">
+              <div>
+                <img src="./img/icon-close-menu.svg" alt=""  id="ri-section__mobile-popup_img"/>
+                <p>Features</p>
+                <p>Pricing</p>
+              </div>
+            </div>
+          </div>
         </div>
         <div id="ri-section__two">
           <h2>Post when your audience is most active.</h2>
@@ -46,16 +63,18 @@
 
     <section id="middle">
       <div id="middle-one">
-        <h2 id="middle-one__one">TimeNow is used by the most influential people.</h2>
+        <h2 id="middle-one__one">
+          TimeNow is used by the most influential people.
+        </h2>
         <div id="middle-one__two">
           <img src="./img/UA1.png" alt="" />
-          <img src="./img/UA2.png" alt="">
-          <img src="./img/UA3.png" alt="">
-          <img src="./img/UA4.png" alt="">
-          <img src="./img/UA5.png" alt="">
-          <img src="./img/UA6.png" alt="">
-          <img src="./img/UA7.png" alt="">
-          <img src="./img/UA8.png" alt="">
+          <img src="./img/UA2.png" alt="" />
+          <img src="./img/UA3.png" alt="" />
+          <img src="./img/UA4.png" alt="" />
+          <img src="./img/UA5.png" alt="" />
+          <img src="./img/UA6.png" alt="" />
+          <img src="./img/UA7.png" alt="" />
+          <img src="./img/UA8.png" alt="" />
         </div>
       </div>
       <div id="middle-two">
@@ -73,18 +92,26 @@
       <div id="middle2_one">
         <p id="middle2_one--one">Unified Dashboard</p>
         <h2>Customizable Dashboard for all platforms.</h2>
-        <p id="middle2_one--two">Use Twitter and instagram but not Linkedin? You can customize your dashboard to your liking. You can even schedule the same post to individual platforms instead of all platforms.</p>
+        <p id="middle2_one--two">
+          Use Twitter and instagram but not Linkedin? You can customize your
+          dashboard to your liking. You can even schedule the same post to
+          individual platforms instead of all platforms.
+        </p>
         <p id="middle2_one--three">Start Scheduling</p>
       </div>
       <div id="middle2_one">
         <p id="middle2_one--one">Unified Dashboard</p>
         <h2>Customizable Dashboard for all platforms.</h2>
-        <p id="middle2_one--two">Use Twitter and instagram but not Linkedin? You can customize your dashboard to your liking. You can even schedule the same post to individual platforms instead of all platforms.</p>
+        <p id="middle2_one--two">
+          Use Twitter and instagram but not Linkedin? You can customize your
+          dashboard to your liking. You can even schedule the same post to
+          individual platforms instead of all platforms.
+        </p>
         <p id="middle2_one--three">Start Scheduling</p>
       </div>
     </section>
 
-    <img src="./img/Logo.svg" alt="" id="img">
+    <img src="./img/Logo.svg" alt="" id="img" />
     <footer>
       <div id="footer_one">
         <p id="footer_one--one">Product</p>
@@ -105,9 +132,9 @@
         <p>Blog</p>
       </div>
       <div id="footer_one">
-        <P id="footer_one--one">Try TweetNow</P>
+        <p id="footer_one--one">Try TweetNow</p>
         <div id="footer_two">
-          <input type="email" placeholder="Email Address" id="">
+          <input type="email" placeholder="Email Address" id="" />
           <p>Start Scheduling</p>
         </div>
       </div>

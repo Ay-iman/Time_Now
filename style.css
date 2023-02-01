@@ -24,6 +24,15 @@ body {
     width: 100%;
 }
 
+#backdrop {
+    background-color: rgb(64 60 60 / 65%);
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 5;
+    display: none;
+}
+
 header {
     display: flex;
     /* background-color: var(--second-color); */
@@ -31,13 +40,17 @@ header {
 }
 
 #ri-section {
-    background-color:var(--sixth-color);
+    background-color: var(--sixth-color);
     padding: 40px 0 0 120px;
 }
 
 #ri-section__one {
     display: flex;
     align-items: center;
+}
+
+#mobile__section {
+    display: none;
 }
 
 #ri-section__one img {
@@ -56,7 +69,7 @@ header {
     width: 70%;
 }
 
-#ri-section__two h2{
+#ri-section__two h2 {
     font-weight: 800;
     font-size: 2.5rem;
     width: 70%;
@@ -70,6 +83,7 @@ header {
     display: flex;
     padding: 13px 0;
 }
+
 
 #ri-section__three--one {
     background-color: var(--third-color);
@@ -91,6 +105,12 @@ header {
 
 #ri-section__four p {
     padding-left: 10px;
+}
+
+#ri-section__four span {
+    text-decoration: underline;
+    font-weight: 600;
+    color: rgb(110, 111, 112);
 }
 
 #le-section {
@@ -160,7 +180,7 @@ header {
 #middle2 {
     background-color: rgb(163, 235, 253);
     display: flex;
-    height: 60vh;
+    height: 39vh;
     justify-content: space-between;
 }
 
@@ -248,10 +268,6 @@ footer {
         font-size: 0.7rem;
         width: 30%;
     }
-
-    #middle2 {
-        height: 70vh;
-    }
 }
 
 @media (max-width:831px) {
@@ -299,11 +315,11 @@ footer {
         padding-bottom: 20px;
     }
 
-    #middle-one__one{
+    #middle-one__one {
         width: 80%;
     }
 
-    #middle-one__two{
+    #middle-one__two {
         width: 50vw;
     }
 
@@ -320,7 +336,7 @@ footer {
         background-color: rgb(163, 235, 253);
         display: flex;
         flex-direction: column;
-        height: 94vh;
+        height: 600px;
         justify-content: space-between;
     }
 
@@ -329,7 +345,7 @@ footer {
     }
 
     #middle2_one h2 {
-        width: 70%; 
+        width: 70%;
         line-height: 2rem;
     }
 
@@ -349,5 +365,151 @@ footer {
 
     footer {
         flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width:560px) {
+    #mobile__section {
+        display: block;
+    }
+
+    header {
+        flex-direction: column;
+    }
+
+    #ri-section {
+        padding: 2rem 1.5rem 0 1.5rem;
+    }
+
+    #ri-section__one,
+    #le-section__one {
+        display: none;
+    }
+
+    #ri-section__mobile {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #ri-section__two {
+        margin-top: 20px;
+    }
+
+    #ri-section__two h2 {
+        line-height: 2.3rem;
+    }
+
+    #ri-section__two p,
+    #middle-two {
+        line-height: 1.5rem;
+    }
+
+    #ri-section__three {
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        padding-bottom: 0;
+    }
+
+    #ri-section__three--one {
+        padding: 8px;
+        font-size: 0.7rem;
+    }
+
+    #ri-section__three--one {
+        width: 26%;
+    }
+
+    #ri-section__four {
+        width: 75%;
+        padding: 0.8rem 0;
+    }
+
+    #le-section {
+        width: 100vw;
+        height: 46vh;
+    }
+
+    #le-section__two {
+        width: 100vw;
+        height: 100vh;
+        padding: 2.5rem;
+    }
+
+    #middle {
+        padding: 7rem 1.5rem 0 1.5rem;
+    }
+
+    #middle-one {
+        flex-direction: column;
+    }
+
+    #middle-one__one {
+        width: 80%;
+        font-weight: 700;
+    }
+
+    #middle-one__two img {
+        width: 15%;
+    }
+
+    #middle2 {
+        margin-top: 5rem;
+        height: 630px;
+    }
+
+    #middle2_one {
+        padding: 2rem 1.5rem 1.5rem 1.5rem;
+    }
+
+    #middle2_one--three {
+        font-size: 0.6rem;
+        width: 30%;
+    }
+
+    #img {
+        padding-left: 1.5rem;
+    }
+
+    footer {
+        padding: 2rem 1.5rem 0 1.5rem;
+        ;
+    }
+
+    /* POP UP */
+
+    #ri-section__mobile-popup {
+        display: none;
+        position: relative;
+        z-index: 10;
+        width: 23vw;
+        height: 12vh;
+        border-radius: 8px;
+        padding: 1rem;
+        right: 0;
+        background-color: aliceblue;
+        transition: 0.2s ease;
+    }
+
+    #ri-section__mobile-popup_img {
+        width: 20%;
+    }
+
+    #ri-section__mobile-popup p {
+        padding-bottom: 1rem;
+    }
+
+    .visible {
+        display: block !important;
+    }
+
+    #ri-section__mobile-popup img {
+        padding-bottom: 0.5rem;
+    }
+
+    #ri-section__mobile-one {
+        display: flex;
+        justify-content: flex-end;
     }
 }
